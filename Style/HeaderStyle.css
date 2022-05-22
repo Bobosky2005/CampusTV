@@ -1,0 +1,61 @@
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding-top: 87.5px;
+    padding-bottom: 87.5px;
+    margin-bottom: 50px;
+
+    background-image: linear-gradient(315deg,
+            rgba(17, 48, 247, 0.59),
+            rgba(50, 183, 240, 0.41) 49%,
+            rgba(83, 45, 233, 0.38)),
+        url(../Media/Background/campustv_web_header_background.png);
+    background-position: 50%, 25%;
+    background-size: cover;
+    background-repeat: repeat no-repeat;
+    background-attachment: scroll, fixed;
+    text-align: left;
+}
+
+.CampusTVLogoAndName {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: static;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CampusTVLogo {
+    height: 325px;
+    margin-right: 20px;
+}
+
+.CampusTVTitle {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.CampusTVTitle_CN {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.CampusTVTitle_EN {
+    width: 510px;
+}
+
+@media all and (max-width: 900px) {
+    .CampusTVLogoAndName {
+        flex-wrap: wrap;
+    }
+
+    /* .CampusTVLogo {
+        height: 275px;
+    } */
+}
